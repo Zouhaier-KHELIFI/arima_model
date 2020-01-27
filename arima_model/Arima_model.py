@@ -43,7 +43,7 @@ from pandas import datetime
 "------------------------------------------------------------------------------------"
 def society(timeseries):
 
-    data=pd.read_csv("C:/Users/khlifi/Desktop/dataset/data/"+timeseries+".csv",sep=';',encoding='latin-1',header=0, parse_dates=[0], index_col=0, squeeze=True)
+    data=pd.read_csv("dataset/"+timeseries+".csv",sep=';',encoding='latin-1',header=0, parse_dates=[0], index_col=0, squeeze=True)
     "------------------------show the type of data-------------------------------------------------"
     #data.describe()
     data.dtypes
